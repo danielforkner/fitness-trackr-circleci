@@ -1,0 +1,9 @@
+version: 2.1
+orbs:
+  node: circleci/node@4.7
+workflows:
+  tests: 
+    jobs:
+      - node/test:
+          version: '18.12.1'
+          pkg-manager: npm
